@@ -1,56 +1,200 @@
 <section class="slide title" id="title" data-auto="title">
-  <aside class="notes">REPLACE: الترحيب، والتعريف بنفسك، وسؤال للقاعة يضبط الإيقاع، وإيقاع اليوم</aside>
+  <aside class="notes"><p>ابدأ بسؤال: من أحضر نظامًا من تخصصه «يعمل بالذكاء الاصطناعي»؟ دوّن ثلاثة على السبورة، فستعودون إليها في نهاية اللقاء لتضعوها على الخريطة.</p></aside>
 </section>
 
-<section class="slide" id="agenda" data-auto="agenda"></section>
+<section class="slide" id="agenda" data-auto="agenda">
+  <aside class="notes"><p>ساعة مفاهيم في مقطعين: النموذج والنظام، ثم المسؤولية. بعدها مختبر مدته ساعة ينتج دليل ناتج التعلم الأول.</p></aside>
+</section>
+
+<section class="slide" id="check-review-probabilistic" data-lo="LO1">
+  <div class="kicker">مراجعة الأسبوع 1</div>
+  <h2>لماذا اختلفت الجملتان؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO1">
+    <p class="lead">أرسل تميم الأمر نفسه حرفيًّا إلى المساعد في محادثتين جديدتين، فحصل على جملتي ترحيب مختلفتين. ما التفسير؟</p>
+    <div class="opts">
+      <div class="opt" data-why="المحادثة الجديدة لا تحمل شيئًا من سابقتها. الاختلاف يظهر حتى في أول محادثتين">المساعد تذكّر المحادثة الأولى فتجنّب تكرارها</div>
+      <div class="opt" data-ok>النموذج يختار كل كلمة بالترجيح، فلا يكرر المخرج نفسه</div>
+      <div class="opt" data-why="لم يتغير شيء في الأمر: هذا ما يجعل التجربة مفيدة. السبب في طريقة التوليد لا في الأمر">الأمر كان غامضًا، والأمر الواضح يعطي دائمًا النص نفسه</div>
+      <div class="opt" data-why="اختلاف الصياغة ليس عطلًا. هكذا صُمّم التوليد، والجملتان صحيحتان">في المساعد عطل، والمساعد السليم يثبت على إجابة واحدة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> المخرج التوليدي ترجيح. لهذا لا يكفي مخرج واحد في أمر مهم، ولهذا نتحقق.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: الترجيح. دقيقتان. من سجل التجارب: اسأل طالبًا ماذا حدث في تجربتيه 1 و2.</p></aside>
+</section>
 
 <!-- الجلسة 1 -->
 
 <section class="slide section" id="s1" data-auto="section" data-session="1"></section>
 
-<section class="slide" id="s1-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+<section class="slide" id="model-is-one-box" data-lo="LO1" data-minutes="4">
+  <div class="kicker">النموذج والنظام</div>
+  <h2>النموذج صندوق واحد، وما تستخدمه نظام من خمسة</h2>
+  <div class="flow">
+    <div class="step c-navy"><b>مدخل المستخدم</b>ما كتبته وما لصقته</div>
+    <div class="arrow">←</div><div class="step c-cyan"><b>الاسترجاع</b>من أين تأتي المعلومة</div>
+    <div class="arrow">←</div><div class="step c-coral"><b>النموذج</b>يولّد أو يصنّف</div>
+    <div class="arrow">←</div><div class="step c-amber"><b>الأدوات</b>ما يستطيع أن يفعله</div>
+    <div class="arrow">←</div><div class="step c-teal"><b>الإنسان في الحلقة</b>من يراجع ويوافق</div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <div class="callout tip mt"><b>حين تقول «المساعد أخطأ» اسأل: أي صندوق؟</b> النموذج نفسه داخل نظامين مختلفين يعطي نتيجتين مختلفتين.</div>
+  <aside class="notes"><p>هذا المخطط يتكرر في المقرر كله، وهو قالب المختبر اليوم. اربطه بتجربة الضرب من الأسبوع الماضي: المساعد الذي أصاب شغّل آلة حاسبة (أداة)، والذي أخطأ ولّد الرقم كما يولّد النص (نموذج وحده). الإنسان في الحلقة ترجمة <span class="en">human in the loop</span>.</p></aside>
 </section>
 
-<section class="slide" id="s1-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="qandeel-trace" data-lo="LO1" data-minutes="4">
+  <div class="kicker">مثال: «قنديل»</div>
+  <h2>«قنديل» يبحث في دليل الطالب أولًا، ثم يصوغ</h2>
+  <div class="trace s">
+    <div class="ev user"><b>الطالب</b>خلال كم يومًا أتظلم من درجتي؟</div>
+    <div class="ev call"><b>استرجاع</b>البحث في دليل الطالب عن «التظلم من الدرجة»</div>
+    <div class="ev result"><b>النتيجة</b>المادة 3: خلال 15 يوم عمل من إعلان النتيجة، عبر بوابة الطالب</div>
+    <div class="ev final"><b>الجواب</b>خلال 15 يوم عمل من إعلان النتيجة، عبر بوابة الطالب (المادة 3).</div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <div class="callout note mt"><b>من دون خطوة الاسترجاع</b> يجيب النموذج مما يرجّحه. في الحل المرجعي لمختبر الأسبوع 8 قال النموذج البديل دون مصدر: «30 يومًا».</div>
+  <aside class="notes"><p>المادة 3 من مقتطف دليل الطالب الافتراضي في ملفات الأسبوع 8. الرقم «30 يومًا» من رد النموذج البديل دون مصدر في الحل المرجعي للمختبر 8.1. الاسترجاع ترجمة <span class="en">retrieval</span>: النظام يجلب فقرات من مصدر ويضعها أمام النموذج. الاسترجاع لا يضمن الصواب: فقرة قديمة تُسترجع فتُصاغ بثقة.</p></aside>
+</section>
+
+<section class="slide" id="where-error-comes-from" data-lo="LO1" data-minutes="3">
+  <div class="kicker">أربعة مصادر للخطأ</div>
+  <h2>الخطأ الواحد قد يأتي من أي صندوق</h2>
+  <table class="t">
+    <tr><th>الصندوق</th><th>كيف يخطئ</th><th>مثال من الجامعة</th></tr>
+    <tr><td><b>الاسترجاع</b></td><td>يجلب فقرة قديمة أو غير ذات صلة</td><td>«قنديل» يستشهد بدليل العام الماضي</td></tr>
+    <tr><td><b>النموذج</b></td><td>يختلق أو يسيء القراءة</td><td>مادة 47 من لائحة لا وجود لها</td></tr>
+    <tr><td><b>الأدوات</b></td><td>تنفّذ فعلًا خاطئًا</td><td>دعوة تُرسل إلى قائمة خاطئة</td></tr>
+    <tr><td><b>الإنسان</b></td><td>يوافق دون أن يقرأ</td><td>رئيس لجنة يضغط «موافق» على كل شيء</td></tr>
+  </table>
+  <div class="callout warn mt"><b>أين يقع الخطأ.</b> إصلاح الأمر لا يصلح مصدرًا قديمًا، ولا يصلح صلاحية أوسع مما يلزم.</div>
+  <aside class="notes"><p>اطلب من الطلبة مثالًا خامسًا: خطأ في المدخل نفسه (سؤال فيه مقدمة خاطئة). سنعود إليه في تحدي الفريق الأحمر في الأسبوع 8.</p></aside>
+</section>
+
+<section class="slide" id="assistant-to-agent" data-lo="LO1" data-minutes="4">
+  <div class="kicker">من المساعد إلى الوكيل</div>
+  <h2>كلما زاد ما ينفّذه النظام وحده، زاد ما يجب أن تضبطه</h2>
+  <div class="ladder" style="--n:3">
+    <div class="rung c-teal on"><b>مساعد</b>يقترح نصًّا، وأنت تنسخ وتنفّذ<small>يكتب الدعوة</small></div>
+    <div class="rung c-cyan on"><b>مساعد مرافق</b>يعمل داخل أدواتك، وأنت تقبل كل خطوة<small>يملأ الدعوة في بريدك</small></div>
+    <div class="rung c-coral on"><b>وكيل</b>يخطط وينفّذ خطوات في أنظمة أخرى<small>يحجز القاعة ويرسل</small></div>
+  </div>
+  <div class="callout tip mt"><b>الفرق ليس في الذكاء بل في الصلاحية.</b> المساعد يخطئ في نص تقرؤه. الوكيل يخطئ في فعل وقع.</div>
+  <aside class="notes"><p>الدرجات الثلاث من طيف الاستقلالية في المنهج الوطني: مساعد، ثم مساعد مرافق (<span class="en">copilot</span>)، ثم وكيل (<span class="en">agent</span>). المثال الواحد على الدرجات الثلاث هو مهمة ترتيب اجتماع اللجنة، وسيعود في مختبر الأسبوع 9 مع بوابة الموافقة.</p></aside>
+</section>
+
+<section class="slide" id="permissions-and-gates" data-lo="LO1" data-minutes="3">
+  <div class="kicker">صلاحيات وبوابات</div>
+  <h2>قاعدتان تضبطان أي وكيل</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>أقل الصلاحيات</h4><p class="small">أعطِ الوكيل ما تحتاجه المهمة فقط. ترتيب اجتماع يحتاج إلى أوقات الفراغ، لا إلى نص كل الرسائل.</p><p class="small mb0"><span class="en">Least privilege</span></p></div>
+    <div class="card c-coral"><h4>بوابة موافقة</h4><p class="small">كل فعل يغيّر شيئًا خارج المحادثة، أو لا يُتراجع عنه، يتوقف عند إنسان يرى ما سيحدث ثم يوافق.</p><p class="small mb0"><span class="en">Approval gate</span></p></div>
+  </div>
+  <div class="callout note mt"><b>في الحل المرجعي للمختبر 9.1</b> نفّذ الوكيل خمس خطوات من سبع: ثلاث مسموحة، واثنتان انتظرتا موافقة، ورُفضت اثنتان.</div>
+  <aside class="notes"><p>الأرقام من إعادة تشغيل خطة الوكيل على سياسة البوابة في حل المختبر 9.1: الخطوات 1 و2 و3 مسموحة، و4 و5 انتظرتا موافقة رئيسة اللجنة، و9 و10 محظورتان. لا تفصّل الآن: يكفي أن يعرف الطلبة أن البوابة تُصمَّم، وسيصممونها بأنفسهم.</p></aside>
+</section>
+
+<section class="slide" id="check-which-box" data-lo="LO1">
+  <div class="kicker">سؤال تحقق</div>
+  <h2>أي صندوق أخطأ؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO1">
+    <p class="lead">سأل طالب «قنديل» عن آخر موعد للاعتذار عن مقرر. بحث «قنديل» فوجد دليل الطالب للعام الماضي، وصاغ منه جوابًا واضحًا برقم المادة. الموعد تغيّر هذا العام. أين الخطأ؟</p>
+    <div class="opts">
+      <div class="opt" data-why="النموذج صاغ ما وُضع أمامه بأمانة. لو أُعطي الدليل الصحيح لأصاب">في النموذج: اختلق موعدًا لا وجود له</div>
+      <div class="opt" data-why="لا أداة نفّذت شيئًا هنا. «قنديل» يجيب ولا يسجّل اعتذارًا">في الأدوات: نفّذت فعلًا لم يُطلب</div>
+      <div class="opt" data-why="السؤال واضح وصحيح. تغيير صياغته لا يغيّر الوثيقة التي يجدها البحث">في المدخل: الطالب لم يكتب سؤاله بوضوح</div>
+      <div class="opt" data-ok>في الاسترجاع: جلب وثيقة قديمة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> النموذج صاغ بأمانة ما جلبه البحث. الإصلاح في المصدر: من يحدّث الدليل ومتى، لا في صياغة السؤال.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: الاسترجاع. من يختار «النموذج» يساوي بين النظام والنموذج: أعده إلى مخطط الصناديق الخمسة. اسأل بعدها: ومن في العمادة يُسأل عن تحديث الدليل؟</p></aside>
+</section>
+
+<section class="slide" id="automation-bias" data-lo="LO1" data-minutes="3">
+  <div class="kicker">انحياز الأتمتة</div>
+  <h2>نصدّق الآلة أكثر مما تستحق، خصوصًا حين تصيب كثيرًا</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>نقبل اقتراح النظام دون أن نفحصه، ونتجاهل ما يخالفه مما نراه بأعيننا</li>
+      <li>كلما أصاب النظام أكثر، قلّ فحصنا له، فيمرّ خطؤه النادر</li>
+      <li>الصياغة الواثقة والواجهة الأنيقة تزيدان الأثر</li>
+    </ul>
+    <div class="card c-coral"><h4>في مختبر الأسبوع الماضي</h4><p class="small mb0">جواب الضرب خاطئ بفارق 100 فقط، في رقم من ثماني خانات. من لا يحسب بنفسه لا يراه.</p></div>
+  </div>
+  <div class="callout tip mt"><b>العلاج إجراء لا نية.</b> خطوة تحقق مكتوبة تُنفَّذ كل مرة، لا «سأنتبه».</div>
+  <aside class="notes"><p>انحياز الأتمتة ترجمة <span class="en">automation bias</span>، وهو من حدود المكوّن الأول في المنهج الوطني. الرقم من التشغيل المرجعي للمختبر 1.1 على النموذج البديل. اسأل: من غيّر إجابته بعد أن قال المساعد غيرها، ثم تبيّن أن إجابته الأولى صحيحة؟</p></aside>
+</section>
+
+<section class="slide" id="skin-app-roles" data-lo="LO1" data-minutes="4">
+  <div class="kicker">سيناريو عالي الأثر</div>
+  <h2>تطبيق يقول «لا تحتاج فحصًا»: من قرّر؟</h2>
+  <div class="cols cols-2">
+    <div class="card c-navy"><h4>ما يفعله النظام</h4><p class="small mb0">يصنّف صورة شامة إلى فئتين. لا يرى التاريخ المرضي، ولا يلمس، ولا يسأل. مخرجه ترجيح.</p></div>
+    <div class="card c-teal"><h4>ما يفعله الإنسان</h4><p class="small mb0">ممارس صحي يقرّر الإحالة. يرى ما لا يراه النظام، ويتحمل القرار.</p></div>
+  </div>
+  <table class="t small mt-s">
+    <tr><th>الخطأ</th><th>ما يحدث</th><th>الثمن</th></tr>
+    <tr><td>إنذار كاذب</td><td>شامة سليمة تُحال إلى طبيب</td><td>زيارة وقلق</td></tr>
+    <tr><td>طمأنة كاذبة</td><td>شامة خطرة لا تُحال</td><td>علاج يتأخر</td></tr>
+  </table>
+  <aside class="notes"><p>السيناريو 1 في مختبر اليوم. النوعان من الخطأ يمهّدان للأسبوع 5: الإيجابي الكاذب والسلبي الكاذب. لا تدخل في أرقام اليوم. السؤال للقاعة: لو كان التطبيق يُستخدم في البيت دون ممارس صحي، من يصير الإنسان في الحلقة؟</p></aside>
+</section>
+
+<section class="slide" id="accountability-boundary" data-lo="LO1" data-minutes="3">
+  <div class="kicker">حدّ المسؤولية</div>
+  <h2>الأداة لا تُسأل. يُسأل من قرّر ومن وضعها في يد الناس</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>من يستخدم</h4><p class="small mb0">مسؤول عمّا يسلّمه باسمه: واجب، تقرير، توصية.</p></div>
+    <div class="card c-cyan"><h4>من يقرّر</h4><p class="small mb0">مسؤول عن القرار الذي بُني على المخرج، قرأه أم لم يقرأه.</p></div>
+    <div class="card c-coral"><h4>من ينشر النظام</h4><p class="small mb0">مسؤول عن اختباره، وعن قول ما لا يصلح له.</p></div>
+  </div>
+  <div class="callout tip mt"><b>اكتب الحدّ في جملة.</b> «النظام يقترح، و(فلان) يقرّر، و(فلان) يُسأل». جملة بلا أسماء ليست حدًّا.</div>
+  <aside class="notes"><p>حدّ المسؤولية ترجمة <span class="en">accountability boundary</span>. المساءلة والمسؤولية من مبادئ أخلاقيات الذكاء الاصطناعي الصادرة عن سدايا. هذه الجملة تعود في القسم 4 من خطة حالة الاستخدام. المصادر: مبادئ أخلاقيات الذكاء الاصطناعي في قائمة المصادر.</p></aside>
+</section>
+
+<section class="slide" id="high-stakes-fields" data-lo="LO1" data-minutes="2">
+  <div class="kicker">متى تتوقف وتسأل</div>
+  <h2>أربعة مجالات يُسأل فيها دائمًا: من الإنسان؟</h2>
+  <div class="cols cols-4 gap-s">
+    <div class="card c-coral"><h4>الصحة</h4><p class="small mb0">تشخيص، جرعة، إحالة</p></div>
+    <div class="card c-purple"><h4>القانون</h4><p class="small mb0">رأي، عقد، حكم</p></div>
+    <div class="card c-amber"><h4>الدرجات والقبول</h4><p class="small mb0">تصحيح، ترتيب، عقوبة</p></div>
+    <div class="card c-cyan"><h4>المال</h4><p class="small mb0">ائتمان، استثمار، تعويض</p></div>
+  </div>
+  <div class="callout warn mt"><b>القاسم المشترك.</b> قرار يمس حق شخص أو سلامته. هنا النظام يقترح على الأكثر، وإنسان مسمّى يقرّر.</div>
+  <aside class="notes"><p>المجالات الأربعة هي أمثلة الحالات عالية الأثر في المنهج الوطني: الصحة، والقانون، والتقييم والقبول، والمشورة المالية. اسأل كل تخصص عن قرار واحد عنده من هذا النوع.</p></aside>
+</section>
+
+<section class="slide" id="check-who-answers" data-lo="LO1">
+  <div class="kicker">سؤال تحقق</div>
+  <h2>من يُسأل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO1">
+    <p class="lead">استخدم إياد مساعدًا لكتابة مسودة مذكرة في مقرر الصياغة القانونية، وسلّمها باسمه. تبيّن أن فيها حكمًا قضائيًّا لا وجود له. من يُسأل؟</p>
+    <div class="opts">
+      <div class="opt" data-ok>إياد، لأنه سلّم المذكرة باسمه</div>
+      <div class="opt" data-why="الشركة مسؤولة عن منتجها، لكن التسليم باسم الطالب قراره هو، والتحقق من المراجع واجبه">الشركة المطوّرة للمساعد، لأن نموذجها اختلق الحكم</div>
+      <div class="opt" data-why="الأداة لا تُسأل. المسؤولية تقع على من قرّر أن يستخدم مخرجها دون تحقق">المساعد نفسه، لأنه كاتب النص</div>
+      <div class="opt" data-why="الأستاذ يضع السياسة ويقيّم، لكنه لم يكتب المذكرة ولم يسلّمها">أستاذ المقرر، لأنه لم يمنع استخدام المساعدات</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> ما تسلّمه باسمك أنت المسؤول عنه. الأداة لا تتحمل، والتحقق من كل مرجع جزء من العمل.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: إياد. إن دافع طالب عن «الشركة»، فرّق بين مسؤولية المنتج العامة ومسؤولية التسليم باسمك. هذه قاعدة المقرر في الأوضاع الثلاثة لسياسة الذكاء الاصطناعي.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-2-1" data-auto="lab" data-lab="2.1">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>هذا المختبر ينتج دليل ناتج التعلم الأول: ثمانية سيناريوهات على الأقل في موضعها. التصنيف فردي أولًا، ثم مقارنة مع زميل في الخطوة 5. الأخطاء المعتادة: السيناريوهان 2 و10 داخل الدوائر، والسيناريو 5 في التوليدي، والسيناريو 7 وكيلًا. لا تصحّح أثناء العمل: دع المقارنة تكشف. المفتاح في مجلد الحلول. من غاب الأسبوع الماضي لا يحتاج شيئًا منه.</p></aside>
 </section>
 
 <section class="slide" id="wrap-up">
   <div class="kicker">خلاصة الأسبوع 2</div>
   <h2>ثلاثة أمور تبقى معك</h2>
   <div class="cols cols-3">
-    <div class="card c-teal"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-coral"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-purple"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
+    <div class="card c-teal"><h4>اسأل: أي صندوق؟</h4><p class="small mb0">المدخل، أو الاسترجاع، أو النموذج، أو الأدوات، أو الإنسان.</p></div>
+    <div class="card c-coral"><h4>الوكيل صلاحية</h4><p class="small mb0">أقل الصلاحيات، وبوابة موافقة قبل كل فعل لا يُتراجع عنه.</p></div>
+    <div class="card c-purple"><h4>الحدّ جملة بأسماء</h4><p class="small mb0">النظام يقترح، وإنسان مسمّى يقرّر ويُسأل.</p></div>
   </div>
+  <aside class="notes"><p>عُد إلى الأنظمة الثلاثة التي دوّنتها في أول اللقاء وضعها مع القاعة على الخريطة.</p></aside>
 </section>
 
 <section class="slide dark" id="next" data-label="التالي">
   <div class="kicker">التالي</div>
-  <h2>الأسبوع 3: REPLACE: موضوع هذه الوحدة في كلمات قليلة</h2>
-  <p class="lead">REPLACE: ما يجهزه المشاركون قبل ذلك، والمختبرات غير المكتملة يمكن إكمالها في المنزل</p>
-  <aside class="notes">REPLACE: الحسابات أو التثبيتات أو القراءة التي يحتاجها المشاركون قبل الوحدة التالية</aside>
+  <h2>الأسبوع 3: البيانات دليل</h2>
+  <p class="lead">قبل اللقاء القادم: ضع الخريطة والمخططين في ملف أعمالك، وأحضر رسمًا بيانيًّا واحدًا من خبر قرأته هذا الأسبوع. المحاولة الأولى في المختبر القادم دون مساعد.</p>
+  <aside class="notes"><p>مهمة الأسبوع المتعقَّبة: الخريطة والمخططان بعد تصحيح المقارنة. الدراسة الذاتية الموجّهة: سيناريو حادي عشر من تخصص الطالب. ذكّر بأن المحاولة الأولى في إطار الادعاء الأسبوع القادم تُكتب دون أي مساعد.</p></aside>
 </section>
