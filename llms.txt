@@ -1,0 +1,53 @@
+# الطلاقة في البيانات والذكاء الاصطناعي لطلبة الجامعات
+
+> تقرأ ادعاءات البيانات والذكاء الاصطناعي قراءة ناقدة، وتستخدم المساعد بطلب مهيكل وتحقق وإفصاح، وتدافع عن خطة حالة استخدام في تخصصك. مقرر من أكاديمية سدايا، الرمز USE-EDU-101، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-edu-101/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-edu-101/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-edu-101/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 28,643 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-edu-101/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [الأسبوع 1: ما الذكاء الاصطناعي وما حدوده](https://sdaiaacademy.github.io/use-edu-101/slides/week1.md): خمس كلمات تُخلط كثيرًا، وأربعة أنواع من المهام، وثلاثة حدود تبقى مهما تغيّرت الأدوات؛ الجلسات: خمس كلمات وأربع مهام؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week1.html؛ نحو 3,575 من الوحدات النصية
+- [الأسبوع 2: النموذج والنظام والمسؤولية](https://sdaiaacademy.github.io/use-edu-101/slides/week2.md): ما يضاف إلى النموذج ليصير نظامًا، ومتى يصير المساعد وكيلًا، ومن يُسأل عن القرار؛ الجلسات: النموذج جزء من نظام؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week2.html؛ نحو 2,572 من الوحدات النصية
+- [الأسبوع 3: البيانات دليل: اقرأ الادعاء قبل أن تصدّقه](https://sdaiaacademy.github.io/use-edu-101/slides/week3.md): من أين جاءت البيانات، وماذا تمثّل، وماذا يثبت الرسم وماذا يفترض؛ الجلسات: من الجدول إلى الادعاء؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week3.html؛ نحو 2,415 من الوحدات النصية
+- [الأسبوع 4: كيف تتعلم الآلة ومتى تخطئ](https://sdaiaacademy.github.io/use-edu-101/slides/week4.md): من البيانات إلى التدريب إلى الاختبار إلى الاستخدام، وأين ينكسر التعميم؛ الجلسات: السمات والوسوم والتعميم؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week4.html؛ نحو 2,460 من الوحدات النصية
+- [الأسبوع 5: لماذا تضلّل الدقة](https://sdaiaacademy.github.io/use-edu-101/slides/week5.md): نوعان من الخطأ، ومعدل أساسي، وأسئلة لا يجيب عنها رقم واحد؛ الجلسات: ما لا تقوله نسبة الدقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week5.html؛ نحو 2,346 من الوحدات النصية
+- [الأسبوع 6: الذكاء الاصطناعي التوليدي: احتمالي وغير متساوٍ](https://sdaiaacademy.github.io/use-edu-101/slides/week6.md): يولّد ما يشبه الصواب، بثقة واحدة في الصواب والخطأ، وبجودة تختلف باختلاف من يسأل وعمّ يسأل؛ الجلسات: ما يولّده وما لا يضمنه؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week6.html؛ نحو 2,574 من الوحدات النصية
+- [الأسبوع 7: الطلب المهيكل وتقييم المخرج](https://sdaiaacademy.github.io/use-edu-101/slides/week7.md): خمسة عناصر تجعل الطلب قابلًا للتقييم، ومعايير تُكتب قبل الأمر لا بعده؛ الجلسات: من أمر عابر إلى طلب مهيكل؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week7.html؛ نحو 2,656 من الوحدات النصية
+- [الأسبوع 8: التحقق والإفصاح والنزاهة](https://sdaiaacademy.github.io/use-edu-101/slides/week8.md): التحقق خطوة من العمل لا إضافة إليه، والإفصاح جزء من النزاهة الأكاديمية؛ الجلسات: تحقق ثم أفصح؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week8.html؛ نحو 2,840 من الوحدات النصية
+- [الأسبوع 9: حوكمة البيانات ومخاطر الأدوات](https://sdaiaacademy.github.io/use-edu-101/slides/week9.md): صنّف قبل أن تشارك، ونقّح قبل أن تسأل، وضع بوابة قبل أن ينفّذ المساعد؛ الجلسات: صنّف ونقّح ثم ضع بوابة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week9.html؛ نحو 2,961 من الوحدات النصية
+- [الأسبوع 10: من المهمة إلى خطة حالة الاستخدام](https://sdaiaacademy.github.io/use-edu-101/slides/week10.md): هل تحتاج المهمة إلى ذكاء اصطناعي أصلًا؟ وما مستوى مخاطرها وضماناتها وتكلفتها؟؛ الجلسات: خطة تُراجَع وتُناقَش؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/week10.html؛ نحو 2,905 من الوحدات النصية
+- [المشروع الختامي: مناقشة خطط حالات الاستخدام](https://sdaiaacademy.github.io/use-edu-101/slides/capstone.md): خطة على النموذج المشترك، راجعها زميل، ومناقشة مدتها خمس دقائق؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/slides/capstone.html؛ نحو 1,248 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: التوقع مقابل الواقع](https://sdaiaacademy.github.io/use-edu-101/labs/W1_1_prediction.md): الأسبوع 1، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W1_1_prediction.html
+- [المختبر 2.1: عشرة سيناريوهات على خريطة واحدة](https://sdaiaacademy.github.io/use-edu-101/labs/W2_1_scenarios.md): الأسبوع 2، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W2_1_scenarios.html
+- [المختبر 3.1: عيادة الادعاءات](https://sdaiaacademy.github.io/use-edu-101/labs/W3_1_claim_clinic.md): الأسبوع 3، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W3_1_claim_clinic.html
+- [المختبر 4.1: مصنِّف بلا برمجة على بيانات تغيّرت](https://sdaiaacademy.github.io/use-edu-101/labs/W4_1_classifier_shift.md): الأسبوع 4، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W4_1_classifier_shift.html
+- [المختبر 5.1: ما الذي تخفيه نسبة 90%](https://sdaiaacademy.github.io/use-edu-101/labs/W5_1_ninety_percent.md): الأسبوع 5، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W5_1_ninety_percent.html
+- [المختبر 6.1: اختبار التغطية: أدوار ومناطق ولهجات](https://sdaiaacademy.github.io/use-edu-101/labs/W6_1_coverage_test.md): الأسبوع 6، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W6_1_coverage_test.html
+- [المختبر 7.1: بطولة الأوامر](https://sdaiaacademy.github.io/use-edu-101/labs/W7_1_prompt_tournament.md): الأسبوع 7، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W7_1_prompt_tournament.html
+- [المختبر 8.1: تحدي الفريق الأحمر: استخرج ادعاءً خاطئًا والتقطه](https://sdaiaacademy.github.io/use-edu-101/labs/W8_1_red_team.md): الأسبوع 8، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W8_1_red_team.html
+- [المختبر 9.1: حوكمة البيانات ومخاطر الأدوات مع بوابة موافقة](https://sdaiaacademy.github.io/use-edu-101/labs/W9_1_governance_gate.md): الأسبوع 9، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W9_1_governance_gate.html
+- [المختبر 10.1: مسودة الخطة ومراجعة الأقران](https://sdaiaacademy.github.io/use-edu-101/labs/W10_1_plan_review.md): الأسبوع 10، الجلسة 1، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-edu-101/labs/W10_1_plan_review.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-edu-101/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 28,643 من الوحدات النصية
+- [context/week1.md](https://sdaiaacademy.github.io/use-edu-101/context/week1.md): الأسبوع 1، نحو 3,575 من الوحدات النصية
+- [context/week2.md](https://sdaiaacademy.github.io/use-edu-101/context/week2.md): الأسبوع 2، نحو 2,572 من الوحدات النصية
+- [context/week3.md](https://sdaiaacademy.github.io/use-edu-101/context/week3.md): الأسبوع 3، نحو 2,415 من الوحدات النصية
+- [context/week4.md](https://sdaiaacademy.github.io/use-edu-101/context/week4.md): الأسبوع 4، نحو 2,460 من الوحدات النصية
+- [context/week5.md](https://sdaiaacademy.github.io/use-edu-101/context/week5.md): الأسبوع 5، نحو 2,346 من الوحدات النصية
+- [context/week6.md](https://sdaiaacademy.github.io/use-edu-101/context/week6.md): الأسبوع 6، نحو 2,574 من الوحدات النصية
+- [context/week7.md](https://sdaiaacademy.github.io/use-edu-101/context/week7.md): الأسبوع 7، نحو 2,656 من الوحدات النصية
+- [context/week8.md](https://sdaiaacademy.github.io/use-edu-101/context/week8.md): الأسبوع 8، نحو 2,840 من الوحدات النصية
+- [context/week9.md](https://sdaiaacademy.github.io/use-edu-101/context/week9.md): الأسبوع 9، نحو 2,961 من الوحدات النصية
+- [context/week10.md](https://sdaiaacademy.github.io/use-edu-101/context/week10.md): الأسبوع 10، نحو 2,905 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-edu-101/context/capstone.md): المشروع الختامي، نحو 1,248 من الوحدات النصية

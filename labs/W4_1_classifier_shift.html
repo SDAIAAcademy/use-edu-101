@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 4.1 · مصنِّف بلا برمجة على بيانات تغيّرت · الطلاقة في البيانات والذكاء الاصطناعي لطلبة الجامعات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="W4_1_classifier_shift.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/week4.html#lab-4-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 4.1</span>
+<h1>مصنِّف بلا برمجة على بيانات تغيّرت</h1>
+<p>تدرّب شجرة قرار دون برمجة على سمات 400 نص لتمييز المكتوب بالذكاء الاصطناعي، وتختبرها على بيانات تشبه التدريب ثم على نصوص طلبة يكتبون بلغتهم الثانية.</p>
+<div class="meta"><span>60 دقيقة</span><span>الأسبوع 4</span><span>الجلسة 1: السمات والوسوم والتعميم</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="4.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>مصنِّف درّبته دون برمجة، ونتيجتا اختبار: على بيانات تشبه التدريب، وعلى بيانات تغيّرت.</li>
+    <li>ملف تعريف لبيانات التدريب: من مُثّل فيها، ومن غاب، وكيف وُسمت، وما يعنيه ذلك لمن يستخدم المصنِّف.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/week4/essays_columns.md" target="_blank"><b>essays_columns.md</b><span>معنى كل عمود، ومن أين جاءت البيانات. اقرأه أولًا.</span></a>
+  <a href="files/week4/essays_train.csv" download><b>essays_train.csv</b><span>400 نص للتدريب: خمس سمات ووسم. هذه نقطة البداية.</span></a>
+  <a href="files/week4/essays_test.csv" download><b>essays_test.csv</b><span>200 نص للاختبار من المصدر نفسه.</span></a>
+  <a href="files/week4/essays_shifted.csv" download><b>essays_shifted.csv</b><span>200 نص من مصدر مختلف: طلبة يكتبون بلغتهم الثانية.</span></a>
+  <a href="files/week4/classifier_fallback.xlsx" download><b>classifier_fallback.xlsx</b><span>البديل لمن لم يشغّل أداة بناء النماذج: أحكام شجرة مرجعية جاهزة، وأنت تعدّ الأخطاء.</span></a>
+</div>
+<p class="small">أداة بناء نماذج دون برمجة (الخطوات مكتوبة لأداة <span dir="ltr">Orange Data Mining</span>، وأي أداة تدرّب شجرة قرار من ملف نصي تصلح)، وجدول بيانات. كل البيانات اصطناعية. <b>سياسة الذكاء الاصطناعي في هذا المختبر:</b> يجوز أن تسأل المساعد المعتمد أن يشرح لك مصطلحًا أو رسالة خطأ في الأداة. ملف تعريف البيانات تكتبه أنت.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · تعرّف على الأعمدة <span class="min">8 دقائق</span></h3>
+  <p>افتح ملف التدريب في جدول البيانات واقرأ ملف الأعمدة. حدّد: ما السمات الخمس؟ ما الوسم؟ من قرّر أن النص «human»؟ وما قيم العمود <code>writer_group</code> في ملف التدريب؟</p>
+</div>
+
+<div class="step">
+  <h3>2 · درّب شجرة قرار واقرأ قاعدتها <span class="min">12 دقيقة</span></h3>
+  <p>في أداة بناء النماذج: حمّل <code>essays_train.csv</code>، واجعل <code>written_by</code> هو الهدف، واستبعد <code>essay_id</code> و<code>writer_group</code> من السمات. صِل الملف بشجرة قرار، واعرض الشجرة.</p>
+  <table>
+    <tr><th>السؤال</th><th>إجابتك</th></tr>
+    <tr><td>ما السمة التي تسأل عنها الشجرة أولًا؟</td><td class="fill"></td></tr>
+    <tr><td>عند أي قيمة تقسم؟</td><td class="fill"></td></tr>
+    <tr><td>اكتب القاعدة الأولى بكلماتك</td><td class="fill"></td></tr>
+  </table>
+  <p class="small">في <span dir="ltr">Orange</span>: الأدوات <span dir="ltr">File</span> ثم <span dir="ltr">Tree</span> ثم <span dir="ltr">Tree Viewer</span>. من يستخدم البديل: القاعدة مكتوبة في أسفل ورقة «جدول الأخطاء».</p>
+</div>
+
+<div class="step">
+  <h3>3 · اختبرها على بيانات تشبه التدريب <span class="min">12 دقيقة</span></h3>
+  <p>اختبر الشجرة على <code>essays_test.csv</code>: نصوص لم ترها، من المصدر نفسه. سجّل الدقة وجدول الأخطاء الأربعة.</p>
+  <table>
+    <tr><th>اختبار (200 نص)</th><th>قالت الشجرة: ai</th><th>قالت الشجرة: human</th></tr>
+    <tr><td>كتبه ذكاء اصطناعي (100)</td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>كتبه إنسان (100)</td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+  <p class="small">في <span dir="ltr">Orange</span>: أداة <span dir="ltr">Test and Score</span> بخيار <span dir="ltr">Test on test data</span>، ثم <span dir="ltr">Confusion Matrix</span>. في البديل: صيغة <code>COUNTIFS</code> على العمودين <code>written_by</code> و<code>tree_says</code>.</p>
+</div>
+
+<div class="step">
+  <h3>4 · اختبرها على بيانات تغيّرت <span class="min">14 دقيقة</span></h3>
+  <p>أعد الاختبار نفسه على <code>essays_shifted.csv</code> دون أن تعيد التدريب. املأ الجدول نفسه، ثم أجب: كم نصًّا بشريًّا من المئة قالت عنه الشجرة «ai»؟ قارن بالخطوة 3.</p>
+  <table>
+    <tr><th>بيانات متغيرة (200 نص)</th><th>قالت الشجرة: ai</th><th>قالت الشجرة: human</th></tr>
+    <tr><td>كتبه ذكاء اصطناعي (100)</td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>كتبه إنسان (100)</td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+  <p>افتح الملفين جنبًا إلى جنب وقارن متوسط <code>sentence_variation</code> للنصوص البشرية في كل منهما. ما الذي تغيّر في البيانات؟</p>
+</div>
+
+<div class="step">
+  <h3>5 · اكتب ملف تعريف البيانات <span class="min">14 دقيقة</span></h3>
+  <p>صفحة قصيرة يقرؤها من سيستخدم المصنِّف قبل أن يثق به:</p>
+  <table>
+    <tr><th>السؤال</th><th>إجابتك من الملفات</th></tr>
+    <tr><td>من مُثّل في بيانات التدريب؟</td><td class="fill"></td></tr>
+    <tr><td>من غاب عنها؟</td><td class="fill"></td></tr>
+    <tr><td>كيف وُسمت النصوص، وما مدى الثقة في الوسم؟</td><td class="fill"></td></tr>
+    <tr><td>على من يصلح المصنِّف، وعلى من لا يصلح؟</td><td class="fill"></td></tr>
+    <tr><td>ما الذي يجب اختباره قبل أي استخدام؟</td><td class="fill"></td></tr>
+  </table>
+  <p>سجّل المخرج في ملف أعمالك مع جدولي الأخطاء.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ إضافي</h3>
+  <p>أضف نصف ملف البيانات المتغيرة إلى التدريب وأعد الاختبار على النصف الآخر. ماذا تغيّر في الأخطاء، ولماذا؟ وهل حُلّت المشكلة أم انتقلت؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>ما دقة الشجرة على ملف الاختبار وعلى ملف البيانات المتغيرة؟</li>
+  <li>أي نوع من الخطأ زاد: نص بشري قيل عنه «ai»، أم نص مولّد قيل عنه «human»؟</li>
+  <li>لماذا لم تكشف دقة الاختبار الأولى هذه المشكلة؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الأرقام المرجعية في <code>labs/solutions/W4_1_classifier_shift.md</code>. شُغّل الحل بشجرة قرار من مكتبة برمجية تقوم مقام أداة بناء النماذج: <code>uv run labs/solutions/check.py 4.1</code>. أداة بناء النماذج نفسها لم تُشغَّل في إعداد المقرر: جرّب المسار على أجهزة القاعة قبل اللقاء، وأرقام شجرتها قد تختلف قليلًا عن المرجع والنمط واحد.</li>
+    <li>الشجرة المرجعية من سؤال واحد (<code>sentence_variation</code> عند 5.9): دقة 88.5% على الاختبار (17 إنذارًا كاذبًا و6 نصوص فاتتها)، و51% على البيانات المتغيرة (92 إنذارًا كاذبًا من 100 نص بشري).</li>
+    <li>السبب: من يكتب بلغته الثانية يكتب جملًا أقصر وأقل تفاوتًا، فتشبه نصوصُه في هذه السمات النصوصَ المولّدة. المصنِّف لم يرَ هذه الفئة في التدريب.</li>
+    <li>البديل في جدول البيانات يعطي جدول الأخطاء نفسه للشجرة المرجعية، فلا يتأخر من تعذّر عليه التثبيت.</li>
+    <li>الخطأ الشائع: ترك <code>writer_group</code> بين السمات. في ملف التدريب قيمته تكشف الوسم مباشرة (تسرب بيانات): إن وقع فيه طالب فاجعله مثالًا للقاعة.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="W3_1_claim_clinic.html" rel="prev">→ المختبر السابق</a><a href="W5_1_ninety_percent.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الطلاقة في البيانات والذكاء الاصطناعي لطلبة الجامعات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع c2e0a9c</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T12:37:54Z","version":"2027.1.0","commit":"c2e0a9c"},"course":{"id":"use-edu-101","code":"USE-EDU-101","title":"الطلاقة في البيانات والذكاء الاصطناعي لطلبة الجامعات","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-edu-101/","repo":"SDAIAAcademy/use-edu-101","home":"../index.html"},"lab":{"id":"4.1","title":"مصنِّف بلا برمجة على بيانات تغيّرت","summary":"تدرّب شجرة قرار دون برمجة على سمات 400 نص لتمييز المكتوب بالذكاء الاصطناعي، وتختبرها على بيانات تشبه التدريب ثم على نصوص طلبة يكتبون بلغتهم الثانية.","minutes":60,"day":4,"unit":"الأسبوع 4","session":1,"deck":"../slides/week4.html#lab-4-1","prev":"W3_1_claim_clinic.html","next":"W5_1_ninety_percent.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

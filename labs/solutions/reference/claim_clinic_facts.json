@@ -1,0 +1,22 @@
+{
+  "n": 30,
+  "r_net_life": 0.77,
+  "r_gdp_life": 0.68,
+  "r_gdp_net": 0.68,
+  "gap_extremes": 14.2,
+  "n_hi": 13,
+  "n_lo": 17,
+  "mean_life_hi": 79.7,
+  "mean_life_lo": 72.5,
+  "gap_split": 7.2,
+  "bar_values": {
+    "SAU": 100.0,
+    "KOR": 97.2,
+    "GBR": 95.5,
+    "USA": 92.7,
+    "DEU": 91.6
+  },
+  "bar_height_ratio": 6.25,
+  "bar_value_ratio": 1.09,
+  "bar_points": 8.4
+}

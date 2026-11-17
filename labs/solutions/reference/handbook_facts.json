@@ -1,0 +1,17 @@
+{
+  "absence_limit_pct": 25,
+  "withdraw_week": 10,
+  "appeal_working_days": 15,
+  "appeal_channel": "بوابة الطالب",
+  "loan_days": 14,
+  "renew_days": 7,
+  "max_hours": 18,
+  "max_hours_with_approval": 21,
+  "gpa_for_21": 4.5,
+  "ai_in_assignments": "مسموح بإذن كتابي من أستاذ المقرر مع الإفصاح، وممنوع في الاختبارات",
+  "hours_article": 8,
+  "not_in_handbook": [
+    "مكافأة التفوق",
+    "مواقف الدراجات"
+  ]
+}

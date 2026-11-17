@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="IBM Plex Sans Arabic, Segoe UI, Tahoma, sans-serif" direction="rtl">
+<title>خريطة المفاهيم: دوائر متداخلة من الذكاء الاصطناعي إلى التوليدي، والوكيل نظام حول نموذج توليدي</title>
+<rect width="900" height="620" fill="#ffffff"/>
+<text x="450" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#102a43">خريطة المفاهيم: اكتب رقم كل سيناريو في أعمق دائرة ينتمي إليها</text>
+<rect x="30" y="60" width="840" height="530" rx="16" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="6 5"/>
+<text x="850" y="88" text-anchor="start" font-size="17" fill="#475569">خارج الدوائر: قاعدة مكتوبة (ليس ذكاءً اصطناعيًّا)</text>
+<ellipse cx="430" cy="340" rx="390" ry="235" fill="#e6f4f1" stroke="#0f766e" stroke-width="2"/>
+<text x="430" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#0f766e">ذكاء اصطناعي</text>
+<ellipse cx="430" cy="360" rx="310" ry="190" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="430" y="198" text-anchor="middle" font-size="18" font-weight="700" fill="#0369a1">تعلم آلة</text>
+<ellipse cx="430" cy="380" rx="230" ry="145" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+<text x="430" y="262" text-anchor="middle" font-size="18" font-weight="700" fill="#6d28d9">تعلم عميق</text>
+<ellipse cx="430" cy="405" rx="150" ry="95" fill="#ffe4e6" stroke="#be123c" stroke-width="2"/>
+<text x="430" y="336" text-anchor="middle" font-size="18" font-weight="700" fill="#be123c">ذكاء اصطناعي توليدي</text>
+<rect x="340" y="392" width="180" height="78" rx="10" fill="#ffffff" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="430" y="420" text-anchor="middle" font-size="15" font-weight="700" fill="#b45309">وكيل</text>
+<text x="430" y="444" text-anchor="middle" font-size="13" fill="#b45309">نموذج توليدي + أدوات وصلاحيات</text>
+</svg>
