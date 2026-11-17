@@ -5,7 +5,7 @@ Data and AI Fluency for University Students
 
 مسار الطلاقة في البيانات والذكاء الاصطناعي · أكاديمية سدايا · USE-EDU-101 · المستوى 100
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تقرأ ادعاءات البيانات والذكاء الاصطناعي قراءة ناقدة، وتستخدم المساعد بطلب مهيكل وتحقق وإفصاح، وتدافع عن خطة حالة استخدام في تخصصك
 
 يتناول الطلاب من مختلف التخصصات المكونات الستة للمنهج الوطني للبيانات والذكاء الاصطناعي في مختلف التخصصات، من مفاهيم الذكاء الاصطناعي والبيانات بوصفها دليلًا إلى التحقق والاستخدام التطبيقي في تخصصاتهم. وتنتهي المختبرات الأسبوعية على بيانات اصطناعية أو عامة بمخرج عمل متعقَّب. والمشروع الختامي خطة لحالة استخدام تتضمن قرارًا مبررًا باستخدام الذكاء الاصطناعي أو عدم استخدامه، ومستوى للمخاطر، وضمانات، ومبررًا للتكلفة.
 
@@ -30,17 +30,17 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| الأسبوع 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week1.html`](slides/week1.html) |
-| الأسبوع 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week2.html`](slides/week2.html) |
-| الأسبوع 3 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week3.html`](slides/week3.html) |
-| الأسبوع 4 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week4.html`](slides/week4.html) |
-| الأسبوع 5 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week5.html`](slides/week5.html) |
-| الأسبوع 6 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week6.html`](slides/week6.html) |
-| الأسبوع 7 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week7.html`](slides/week7.html) |
-| الأسبوع 8 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week8.html`](slides/week8.html) |
-| الأسبوع 9 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week9.html`](slides/week9.html) |
-| الأسبوع 10 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1 | [`slides/week10.html`](slides/week10.html) |
-| المشروع الختامي | عروض المشروع الختامي |  | [`slides/capstone.html`](slides/capstone.html) |
+| الأسبوع 1 | ما الذكاء الاصطناعي وما حدوده | خمس كلمات وأربع مهام | [`slides/week1.html`](slides/week1.html) |
+| الأسبوع 2 | النموذج والنظام والمسؤولية | النموذج جزء من نظام | [`slides/week2.html`](slides/week2.html) |
+| الأسبوع 3 | البيانات دليل: اقرأ الادعاء قبل أن تصدّقه | من الجدول إلى الادعاء | [`slides/week3.html`](slides/week3.html) |
+| الأسبوع 4 | كيف تتعلم الآلة ومتى تخطئ | السمات والوسوم والتعميم | [`slides/week4.html`](slides/week4.html) |
+| الأسبوع 5 | لماذا تضلّل الدقة | ما لا تقوله نسبة الدقة | [`slides/week5.html`](slides/week5.html) |
+| الأسبوع 6 | الذكاء الاصطناعي التوليدي: احتمالي وغير متساوٍ | ما يولّده وما لا يضمنه | [`slides/week6.html`](slides/week6.html) |
+| الأسبوع 7 | الطلب المهيكل وتقييم المخرج | من أمر عابر إلى طلب مهيكل | [`slides/week7.html`](slides/week7.html) |
+| الأسبوع 8 | التحقق والإفصاح والنزاهة | تحقق ثم أفصح | [`slides/week8.html`](slides/week8.html) |
+| الأسبوع 9 | حوكمة البيانات ومخاطر الأدوات | صنّف ونقّح ثم ضع بوابة | [`slides/week9.html`](slides/week9.html) |
+| الأسبوع 10 | من المهمة إلى خطة حالة الاستخدام | خطة تُراجَع وتُناقَش | [`slides/week10.html`](slides/week10.html) |
+| المشروع الختامي | مناقشة خطط حالات الاستخدام |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
 ## دراسة الحالة
@@ -54,16 +54,16 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | الأسبوع 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`W1_1.html`](labs/W1_1.html) |
-| 2.1 | الأسبوع 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`W2_1.html`](labs/W2_1.html) |
-| 3.1 | الأسبوع 3 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 3.1 | [`W3_1.html`](labs/W3_1.html) |
-| 4.1 | الأسبوع 4 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 4.1 | [`W4_1.html`](labs/W4_1.html) |
-| 5.1 | الأسبوع 5 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 5.1 | [`W5_1.html`](labs/W5_1.html) |
-| 6.1 | الأسبوع 6 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 6.1 | [`W6_1.html`](labs/W6_1.html) |
-| 7.1 | الأسبوع 7 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 7.1 | [`W7_1.html`](labs/W7_1.html) |
-| 8.1 | الأسبوع 8 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 8.1 | [`W8_1.html`](labs/W8_1.html) |
-| 9.1 | الأسبوع 9 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 9.1 | [`W9_1.html`](labs/W9_1.html) |
-| 10.1 | الأسبوع 10 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 10.1 | [`W10_1.html`](labs/W10_1.html) |
+| 1.1 | الأسبوع 1 · الجلسة 1 | التوقع مقابل الواقع | [`W1_1_prediction.html`](labs/W1_1_prediction.html) |
+| 2.1 | الأسبوع 2 · الجلسة 1 | عشرة سيناريوهات على خريطة واحدة | [`W2_1_scenarios.html`](labs/W2_1_scenarios.html) |
+| 3.1 | الأسبوع 3 · الجلسة 1 | عيادة الادعاءات | [`W3_1_claim_clinic.html`](labs/W3_1_claim_clinic.html) |
+| 4.1 | الأسبوع 4 · الجلسة 1 | مصنِّف بلا برمجة على بيانات تغيّرت | [`W4_1_classifier_shift.html`](labs/W4_1_classifier_shift.html) |
+| 5.1 | الأسبوع 5 · الجلسة 1 | ما الذي تخفيه نسبة 90% | [`W5_1_ninety_percent.html`](labs/W5_1_ninety_percent.html) |
+| 6.1 | الأسبوع 6 · الجلسة 1 | اختبار التغطية: أدوار ومناطق ولهجات | [`W6_1_coverage_test.html`](labs/W6_1_coverage_test.html) |
+| 7.1 | الأسبوع 7 · الجلسة 1 | بطولة الأوامر | [`W7_1_prompt_tournament.html`](labs/W7_1_prompt_tournament.html) |
+| 8.1 | الأسبوع 8 · الجلسة 1 | تحدي الفريق الأحمر: استخرج ادعاءً خاطئًا والتقطه | [`W8_1_red_team.html`](labs/W8_1_red_team.html) |
+| 9.1 | الأسبوع 9 · الجلسة 1 | حوكمة البيانات ومخاطر الأدوات مع بوابة موافقة | [`W9_1_governance_gate.html`](labs/W9_1_governance_gate.html) |
+| 10.1 | الأسبوع 10 · الجلسة 1 | مسودة الخطة ومراجعة الأقران | [`W10_1_plan_review.html`](labs/W10_1_plan_review.html) |
 <!-- /academy:labs -->
 
 ## المشروع الختامي
@@ -89,7 +89,33 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المرجعيات الوطنية
+
+- [سدايا: منهج البيانات والذكاء الاصطناعي لطلبة الجامعات في مختلف التخصصات](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data-AI-Curriculum-University-Students.pdf)
+- [نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
+- [مكتب إدارة البيانات الوطنية: سياسة تصنيف البيانات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [مكتب إدارة البيانات الوطنية: سياسة مشاركة البيانات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf)
+- [سدايا: مبادئ أخلاقيات الذكاء الاصطناعي](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf)
+- [سدايا: مبادئ الذكاء الاصطناعي التوليدي للعموم](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenerativeAIPublicAR.pdf)
+- [سدايا: مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
+- [سدايا: الأنظمة والسياسات (صفحة الفهرس)](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+
+### البيانات العامة في المختبر 3.1
+
+- [World Bank Open Data: Individuals using the Internet (% of population), IT.NET.USER.ZS](https://data.worldbank.org/indicator/IT.NET.USER.ZS)
+- [World Bank Open Data: Life expectancy at birth, total (years), SP.DYN.LE00.IN](https://data.worldbank.org/indicator/SP.DYN.LE00.IN)
+- [World Bank Open Data: GDP per capita, PPP (current international $), NY.GDP.PCAP.PP.CD](https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD)
+- [World Bank: public licences of the data catalog (CC BY 4.0)](https://datacatalog.worldbank.org/public-licenses)
+
+### أدلة عن كواشف النصوص
+
+- [Liang, Yuksekgonul, Mao, Wu, Zou: GPT detectors are biased against non-native English writers (arXiv 2304.02819)](https://arxiv.org/abs/2304.02819)
+- [OpenAI: New AI classifier for indicating AI-written text (withdrawn, July 2023)](https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/)
+
+### أدوات المختبرات
+
+- [Orange Data Mining](https://orangedatamining.com/)
+- [Teachable Machine](https://teachablemachine.withgoogle.com/)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
